@@ -8,6 +8,12 @@
     //Move from full screen terminal to code
     { "key": "ctrl+`", "command": "workbench.action.toggleMaximizedPanel", "when": "terminalFocus"},
 
+
+    //Toggle between focusing between the editor and terminal (small size) without changing sizes.
+    {"key": "ctrl+escape","command": "workbench.action.terminal.focus","when": "!terminalFocus"},
+    {"key": "ctrl+escape","command": "workbench.action.focusLastEditorGroup","when": "terminalFocus"},
+
+
     //Show and hide the sidebar
     { "key": "ctrl+1", "command": "workbench.action.toggleSidebarVisibility"},
 
