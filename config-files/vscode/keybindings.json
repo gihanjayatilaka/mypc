@@ -1,0 +1,15 @@
+// Place your key bindings in this file to override the defaults
+
+[
+    //Move from code editor to the terminal (small size)
+    { "key": "ctrl+`", "command": "workbench.action.terminal.focus", "when": "!terminalFocus"},
+
+    //Move fromsmall size terminal to fill screen terminal ANS
+    //Move from full screen terminal to code
+    { "key": "ctrl+`", "command": "workbench.action.toggleMaximizedPanel", "when": "terminalFocus"},
+
+    //Show and hide the sidebar
+    { "key": "ctrl+1", "command": "workbench.action.toggleSidebarVisibility"},
+
+    
+]
