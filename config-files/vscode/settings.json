@@ -1,0 +1,24 @@
+{
+    "workbench.statusBar.visible": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.wordWrap": "on",
+    "update.mode": "manual",
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+    "vim.disableExtension": true,
+    "csv-edit.fontSizeInPx": 10,
+    "csv-edit.highlightCsvComments": true,
+    "files.associations": {
+        "*.c": "c"
+    },
+    "python.jediEnabled": false,
+    "terminal.integrated.inheritEnv": false
+}
