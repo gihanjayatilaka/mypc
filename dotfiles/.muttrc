@@ -1,0 +1,81 @@
+set from = "<<email>>@eng.pdn.ac.lk"
+set realname = "Gihan Jayatilaka"
+set imap_user = "<<email>>@eng.pdn.ac.lk"
+set imap_pass = "<<app-password>>"
+
+##REMOTE GMAIL FOLDERS
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed ="+[Google Mail]/Drafts"
+set trash = "+[Google Mail]Trash"
+
+##SMTP Settings to sent email
+set smtp_url = "smtp://<<email>>@eng.pdn.ac.lk@smtp.gmail.com:587/"
+set smtp_pass = "<<app-password>>"
+set ssl_starttls=yes
+
+##LOCAL FOLDERS FOR CACHED HEADERS AND CERTIFICATES
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+
+##SECURING
+set move = no  #Stop asking to "move read messages to mbox"!
+set imap_keepalive = 900
+
+##Sort by newest conversation first.
+set sort = reverse-threads
+set sort_aux = last-date-received
+
+##Set editor to create new email
+set editor='nano'
+
+set signature ="~/.mutt/<<signature.txt>>" 
+
+#Reply to all
+bind index,pager g group-reply
+
+
+
+###############################################################################
+# Dracula Theme for Mutt: https://draculatheme.com/
+#
+# @author Paul Townsend <paul@caprica.org>
+
+# general ------------ foreground ---- background -----------------------------
+color error		color231	color212
+color indicator		color231	color241
+color markers		color210	default
+color message		default		default
+color normal		default		default
+color prompt		default	        default
+color search		color84		default
+color status 		color141	color236
+color tilde		color231	default
+color tree		color141	default
+
+# message index ------ foreground ---- background -----------------------------
+color index		color210	default 	~D # deleted messages
+color index		color84		default 	~F # flagged messages
+color index		color84 	color117 	~N # new messages
+color index		color212	default 	~Q # messages which have been replied to
+color index		color215	default 	~T # tagged messages
+color index		color141	default		~v # messages part of a collapsed thread
+
+# message headers ---- foreground ---- background -----------------------------
+color hdrdefault	color117	default
+color header		color231	default		^Subject:.*
+
+# message body ------- foreground ---- background -----------------------------
+color attachment	color228	default
+color body		color231	default		[\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+               # email addresses
+color body		color228	default		(https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+        # URLs
+color body		color231	default		(^|[[:space:]])\\*[^[:space:]]+\\*([[:space:]]|$) # *bold* text
+color body		color231	default		(^|[[:space:]])_[^[:space:]]+_([[:space:]]|$)     # _underlined_ text
+color body		color231	default		(^|[[:space:]])/[^[:space:]]+/([[:space:]]|$)     # /italic/ text
+color quoted		color61		default
+color quoted1		color117	default
+color quoted2		color84		default
+color quoted3		color215	default
+color quoted4		color212	default
+color signature		color212	default
