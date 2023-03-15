@@ -1,0 +1,25 @@
+Host *
+  ServerAliveInterval 60
+  IdentityFile C:\Users\gihan\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\gihan\.ssh\id_rsa
+  IdentityFile ~/.ssh/id_rsa
+
+Host nexusvulcan01
+  HostName nexusvulcan01.umiacs.umd.edu
+  User gihan
+
+Host vulcansub00
+  HostName vulcansub00.umiacs.umd.edu
+  User gihan
+
+Host cmlsub00
+  HostName cmlsub00.umiacs.umd.edu
+  User gihan
+
+Host aiken
+  User e14158
+  HostName aiken.ce.pdn.ac.lk
+
+Host turing
+  HostName turing.ce.pdn.ac.lk
+  User localturinggihan
+  ProxyCommand ssh -W %h:%p aiken
