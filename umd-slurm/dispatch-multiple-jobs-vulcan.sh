@@ -19,11 +19,11 @@ export TORCH_HOME=/vulcanscratch/gihan/torch-hub/
 conda activate $CONDA_ENV_NAME
 
 
-sed -n "${SLURM_ARRAY_TASK_ID}p" < /vulcanscratch/gihan/umd-slurm/list-of-commandsOld.sh
-sed -n "${SLURM_ARRAY_TASK_ID}p" < /vulcanscratch/gihan/umd-slurm/list-of-commandsOld.sh >&2
+sed -n "${SLURM_ARRAY_TASK_ID}p" < /vulcanscratch/gihan/umd-slurm/list-of-commands.sh
+sed -n "${SLURM_ARRAY_TASK_ID}p" < /vulcanscratch/gihan/umd-slurm/list-of-commands.sh >&2
 echo "------"
 echo "------" >&2
-eval $(sed -n "${SLURM_ARRAY_TASK_ID}p" < /vulcanscratch/gihan/umd-slurm/list-of-commandsOld.sh)
+eval $(sed -n "${SLURM_ARRAY_TASK_ID}p" < /vulcanscratch/gihan/umd-slurm/list-of-commands.sh)
 
 
 
