@@ -1,1 +1,3 @@
 source /nfshomes/gihan/.bashrc
+alias sb='/vulcanscratch/gihan/umd-slurm/clearlogs.sh ; sbatch /vulcanscratch/gihan/umd-slurm/dispatch-multiple-jobs-vulcan.sh'
+alias sr='srun --pty --account=abhinav --partition=dpart --gres=gpu:rtxa5000:1 --cpus-per-task 16 --mem=32G --qos=high --time=08:00:00 bash'
