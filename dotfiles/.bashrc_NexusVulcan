@@ -30,7 +30,7 @@ alias sr='srun --pty --account=nexus --partition=tron --gres=gpu:rtxa5000:1 --cp
 
 alias ll='conda activate '$CONDA_ENV'; cd '$WORKING_DIR
 alias tm='/vulcanscratch/gihan/learn-mmdet/tmuxConfigRight.sh'
-
+alias sshp='ssh -o PasswordAuthentication=yes -o PreferredAuthentications=keyboard-interactive,password -o PubkeyAuthentication=no'
 
 # This will start working when Vulcan is merged into Nexus (late 2023 Aug)
 # srun --pty --account=vulcan-abhinav --partition=vulcan-dpart --gres=gpu:1 --cpus-per-task 4 --mem=64G --qos=vulcan-high --time=02:00:00 bash
