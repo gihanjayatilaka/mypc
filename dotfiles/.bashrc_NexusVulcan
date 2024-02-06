@@ -32,3 +32,8 @@ alias srv='srun --pty --account=vulcan-abhinav --partition=vulcan-dpart --gres=g
 alias ll='conda activate '$CONDA_ENV'; cd '$WORKING_DIR
 alias tm='/vulcanscratch/gihan/learn-mmdet/tmuxConfigRight.sh'
 alias sshp='ssh -o PasswordAuthentication=yes -o PreferredAuthentications=keyboard-interactive,password -o PubkeyAuthentication=no'
+
+alias findvsc="show_nodes | grep idle | grep vulcan-scavenger | grep -v null | grep -v cml"
+alias findsc="show_nodes | grep idle | grep scavenger | grep -v null | grep -v cml | grep -v vulcan"
+alias fsc=findsc
+alias fvsc=findvsc
