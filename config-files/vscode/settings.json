@@ -1,24 +1,52 @@
 {
-    "workbench.statusBar.visible": true,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.dataScience.sendSelectionToInteractiveWindow": true,
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
-    "editor.wordWrap": "on",
-    "update.mode": "manual",
-    "extensions.autoCheckUpdates": false,
-    "extensions.autoUpdate": false,
-    "vim.disableExtension": true,
-    "csv-edit.fontSizeInPx": 10,
-    "csv-edit.highlightCsvComments": true,
-    "files.associations": {
-        "*.c": "c"
-    },
-    "python.jediEnabled": false,
-    "terminal.integrated.inheritEnv": false
+	"workbench.colorTheme": "Default Dark+",
+	"editor.inlineSuggest.enabled": true,
+	"[python]": {
+		"editor.detectIndentation": false,
+		"editor.formatOnType": true,
+		"editor.tabSize": 4,
+	},
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": true,
+		"markdown": true,
+		"scminput": false,
+		"yaml": false,
+		"python": false
+	},
+	"jupyter.askForKernelRestart": false,
+	"remote.SSH.remotePlatform": {
+		"nexusvulcan01": "linux",
+		"vulcansub00": "linux",
+		"cmlsub00": "linux",
+		"turing": "linux",
+		"aiken": "linux",
+		"tesla": "linux",
+		"kepler": "linux",
+		"nexusvulcan01.umiacs.umd.edu": "linux",
+		"slurmnode": "linux"
+	},
+	"remote.SSH.serverInstallPath": {
+		"turing": "/storage/scratch/e14-4yp-low-light-images/.vscode-server",
+		"nexusvulcan01": "/vulcanscratch/gihan/program-files/.vscode-server"
+	},
+	"files.associations": {
+		"*.py": "python"
+	},
+	"git.ignoreLegacyWarning": true,
+	"git.ignoreMissingGitWarning": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"terminal.external.windowsExec": "C:\\Program Files\\WindowsApps\\MicrosoftCorporationII.WindowsSubsystemForLinux_1.1.3.0_x64__8wekyb3d8bbwe\\wsl.exe",
+	"terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+	"remote.SSH.configFile": "C:\\Users\\gihan\\AppData\\Local\\Packages\\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\gihan\\.ssh\\config",
+	"editor.fontFamily": "Cascadia Code",
+	"redhat.telemetry.enabled": true,
+	"remote.SSH.showLoginTerminal": true,
+	"diffEditor.maxComputationTime": 0, //I am setting this up to false because of the login terminal issue.
+	"python.languageServer": "Pylance",
+	"remote.SSH.useFlock": false,
+	"notebook.output.wordWrap": true,
+	"workbench.editorLargeFileConfirmation": 50,
+	"editor.stickyScroll.enabled": false
 }
+
