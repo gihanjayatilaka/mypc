@@ -1,10 +1,13 @@
 Host *
   ServerAliveInterval 60
-  IdentityFile C:\Users\gihan\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\gihan\.ssh\id_rsa
   IdentityFile ~/.ssh/id_rsa
+  IdentityFile ~/.ssh/id_rsa_github
+  IdentityFile C:\Users\gihan\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\gihan\.ssh\id_rsa
 
-Host nexusvulcan01
-  HostName nexusvulcan01.umiacs.umd.edu
+
+
+Host nexusvulcan00
+  Hostname nexusvulcan00.umiacs.umd.edu
   User gihan
 
 Host vulcansub00
@@ -19,7 +22,61 @@ Host aiken
   User e14158
   HostName aiken.ce.pdn.ac.lk
 
+Host tesla
+  User e14158
+  HostName tesla.ce.pdn.ac.lk
+
 Host turing
   HostName turing.ce.pdn.ac.lk
-  User localturinggihan
+  User gihan
+  ProxyCommand ssh -W %h:%p tesla
+
+Host kepler
+  HostName kepler.ce.pdn.ac.lk
+  User gihan
+  ProxyCommand ssh -W %h:%p tesla
+
+Host ai4covid
+  Hostname 10.40.29.220
+  User gihan
+  ProxyCommand ssh -W %h:%p tesla
+
+Host babbage
+  Hostname babbage.ce.pdn.ac.lk
+  Port 222
+  User e14158
+
+Host virmach
+  Hostname 47.87.225.119
+  Port 6000
+  User root
+
+Host junkfood
+  Hostname junkfood.cs.umd.edu
+  User gihan
+
+Host turingservermonitoring
+  Hostname turing.ce.pdn.ac.lk
+  User servermonitoring
   ProxyCommand ssh -W %h:%p aiken
+
+Host ai4covidservermonitoring
+  Hostname 10.40.29.220
+  User servermonitoring
+  ProxyCommand ssh -W %h:%p aiken
+
+
+Host hpserver
+  Hostname 10.40.18.10
+  User e14158
+  ProxyCommand ssh -W %h:%p aiken
+
+
+Host nexusvulcan01
+  Hostname nexusvulcan01.umiacs.umd.edu
+  User gihan
+
+Host slurmnode
+  Hostname tron46.umiacs.umd.edu
+  User gihan
+  ProxyCommand ssh -W %h:%p nexusvulcan01
