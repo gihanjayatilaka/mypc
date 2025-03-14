@@ -1,21 +1,11 @@
 Host *
   ServerAliveInterval 60
   IdentityFile ~/.ssh/id_rsa
-  IdentityFile ~/.ssh/id_rsa_github
-  IdentityFile C:\Users\gihan\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\gihan\.ssh\id_rsa
 
 
 
 Host nexusvulcan00
-  Hostname nexusvulcan00.umiacs.umd.edu
-  User gihan
-
-Host vulcansub00
-  HostName vulcansub00.umiacs.umd.edu
-  User gihan
-
-Host cmlsub00
-  HostName cmlsub00.umiacs.umd.edu
+  Hostname nexusvulcan01.umiacs.umd.edu
   User gihan
 
 Host aiken
@@ -45,11 +35,6 @@ Host babbage
   Hostname babbage.ce.pdn.ac.lk
   Port 222
   User e14158
-
-Host virmach
-  Hostname 47.87.225.119
-  Port 6000
-  User root
 
 Host junkfood
   Hostname junkfood.cs.umd.edu
