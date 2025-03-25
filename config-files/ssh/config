@@ -1,6 +1,7 @@
 Host *
   ServerAliveInterval 60
   IdentityFile ~/.ssh/id_rsa
+  IdentityFile ./id_rsa
 
 
 
@@ -62,6 +63,6 @@ Host nexusvulcan01
   User gihan
 
 Host slurmnode
-  Hostname tron46.umiacs.umd.edu
+  Hostname cmlcpu01.umiacs.umd.edu
   User gihan
-  ProxyCommand ssh -W %h:%p nexusvulcan01
+  ProxyCommand ssh -W %h:%p nexusvulcan01.umiacs.umd.edu
