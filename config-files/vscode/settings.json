@@ -28,7 +28,14 @@
 	},
 	"remote.SSH.serverInstallPath": {
 		"turing": "/storage/scratch/e14-4yp-low-light-images/.vscode-server",
-		"nexusvulcan01": "/vulcanscratch/gihan/program-files/.vscode-server"
+		"kepler": "/storage/scratch/e14-4yp-low-light-images/.vscode-server",
+		"aiken": "/storage/scratch/e14-4yp-low-light-images/.vscode-server",
+		"tesla": "/storage/scratch/e14-4yp-low-light-images/.vscode-server",
+		"ada": "/storage/scratch/e14-4yp-low-light-images/.vscode-server",
+		"ampere": "/storage/scratch/e14-4yp-low-light-images/.vscode-server",
+		"nexusvulcan01": "/vulcanscratch/gihan/program-files/.vscode-server",
+		"nv": "/vulcanscratch/gihan/program-files/.vscode-server",
+		"slurmnode": "/vulcanscratch/gihan/program-files/.vscode-server"
 	},
 	"files.associations": {
 		"*.py": "python"
